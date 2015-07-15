@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E0EF13AB-FCB4-4F96-B862-530A1448D6BF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Taasky</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FFD08B40DE6E859E6F2800541A1FFB8B7024DA62</key>
+		<string>https://github.com/WAMaker/TasskyLike3DSidebar.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Taasky/Taasky.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FFD08B40DE6E859E6F2800541A1FFB8B7024DA62</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/WAMaker/TasskyLike3DSidebar.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FFD08B40DE6E859E6F2800541A1FFB8B7024DA62</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FFD08B40DE6E859E6F2800541A1FFB8B7024DA62</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TasskyLike3DSidebar</string>
+		</dict>
+	</array>
+</dict>
+</plist>
