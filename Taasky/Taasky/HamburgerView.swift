@@ -12,7 +12,7 @@ class HamburgerView: UIView {
 
     let imageView: UIImageView! = UIImageView(image: UIImage(named: "Hamburger"))
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configure()
     }

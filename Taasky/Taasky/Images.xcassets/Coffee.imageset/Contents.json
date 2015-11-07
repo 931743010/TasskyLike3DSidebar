@@ -2,13 +2,13 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "coffee.png"
+      "filename" : "coffee.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "coffee@2x.png"
+      "filename" : "coffee@2x.png",
+      "scale" : "2x"
     },
     {
       "idiom" : "universal",

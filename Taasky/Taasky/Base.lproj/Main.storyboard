@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Mo-n7-OEB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Mo-n7-OEB">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--Container View Controller-->
@@ -21,9 +22,11 @@
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atm-ip-P0P">
                                         <rect key="frame" x="0.0" y="0.0" width="680" height="600"/>
+                                        <animations/>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgE-QQ-RsB" userLabel="Menu Container View">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="600"/>
+                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="Pdq-1X-YDQ"/>
                                         </constraints>
@@ -33,11 +36,13 @@
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTQ-gL-rrL" userLabel="Detail Container View">
                                         <rect key="frame" x="80" y="0.0" width="600" height="600"/>
+                                        <animations/>
                                         <connections>
                                             <segue destination="mIg-Bn-gNe" kind="embed" identifier="DetailViewSegue" id="AUX-64-6Xr"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="mgE-QQ-RsB" secondAttribute="bottom" id="18c-2X-DbT"/>
                                     <constraint firstItem="atm-ip-P0P" firstAttribute="top" secondItem="A72-yu-3eI" secondAttribute="top" id="1X3-OM-Ly4"/>
@@ -56,6 +61,7 @@
                                 </connections>
                             </scrollView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="atm-ip-P0P" firstAttribute="width" secondItem="Swo-AL-kf9" secondAttribute="width" constant="80" id="5U8-AM-B5i"/>
@@ -80,19 +86,24 @@
             <objects>
                 <tableViewController storyboardIdentifier="MenuVC" id="e2S-0q-zdG" customClass="MenuViewController" customModule="Taasky" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3eT-gn-sjv">
-                        <rect key="frame" x="0.0" y="64" width="80" height="556"/>
+                        <rect key="frame" x="0.0" y="44" width="80" height="556"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuItemCell" rowHeight="80" id="YQp-NA-iVS" customClass="MenuItemCell" customModule="Taasky" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="22" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YQp-NA-iVS" id="tvx-sg-ajJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l7J-cT-urA">
                                             <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <animations/>
                                         </imageView>
                                     </subviews>
+                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="l7J-cT-urA" secondAttribute="trailing" id="8wn-RH-lqf"/>
                                         <constraint firstItem="l7J-cT-urA" firstAttribute="top" secondItem="tvx-sg-ajJ" secondAttribute="top" id="APB-tc-nDh"/>
@@ -100,6 +111,7 @@
                                         <constraint firstItem="l7J-cT-urA" firstAttribute="leading" secondItem="tvx-sg-ajJ" secondAttribute="leading" id="mx6-56-ncv"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <animations/>
                                 <connections>
                                     <outlet property="menuItemImageView" destination="l7J-cT-urA" id="GCL-bk-Gni"/>
                                 </connections>
@@ -125,17 +137,19 @@
                         <viewControllerLayoutGuide type="bottom" id="uQx-fZ-VZ4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Tw1-x2-7EH">
-                        <rect key="frame" x="0.0" y="64" width="600" height="556"/>
+                        <rect key="frame" x="0.0" y="44" width="600" height="556"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8qy-84-dsK">
                                 <rect key="frame" x="140" y="118" width="320" height="320"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="Y7k-c7-dQD"/>
                                     <constraint firstAttribute="height" constant="320" id="ey1-MD-Ylm"/>
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.054901960784313725" green="0.27450980392156865" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="8qy-84-dsK" firstAttribute="centerY" secondItem="Tw1-x2-7EH" secondAttribute="centerY" id="bHq-Un-srP"/>
@@ -159,6 +173,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="12Y-9D-IRf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -178,6 +193,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Die-9l-8Ts">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
